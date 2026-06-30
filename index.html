@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athena — AI Leadership Handbook</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">A</div>
+      <div>
+        <h1>Athena</h1>
+        <p>AI Leadership Handbook</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#learning-path">Learning Path</a>
+      <a href="#episode-1">Episode 1</a>
+      <a href="#concept-map">Concept Map</a>
+      <a href="#project-lens">Your Project Lens</a>
+      <a href="#interview-mode">Interview Mode</a>
+      <a href="#cheatsheet">Cheat Sheet</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="dashboard" class="hero">
+      <div class="eyebrow">Private AI Interview + Leadership Curriculum</div>
+      <h2>Athena: Learn AI Through Real Systems, Real Stories, and Interview Pressure</h2>
+      <p>
+        Built for a senior TPM / AI product leader who learns fastest through practical analogies,
+        architecture judgment, and examples from AetherSignal, MedicalDiary, Corporate Intake, and enterprise AI platforms.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#episode-1">Start Episode 1</a>
+        <a class="button secondary" href="#interview-mode">Practice Interview</a>
+      </div>
+      <div class="stats">
+        <div><strong>10</strong><span>Volumes</span></div>
+        <div><strong>80+</strong><span>Lessons Planned</span></div>
+        <div><strong>300+</strong><span>Interview Questions</span></div>
+      </div>
+    </section>
+
+    <section id="learning-path" class="section">
+      <h2>Learning Path</h2>
+      <p class="section-intro">The order is product-first, then architecture, then concepts. You still learn the fundamentals — but only when they solve a real problem.</p>
+      <div class="cards grid-3">
+        <article class="card active">
+          <span class="pill">Episode 1</span>
+          <h3>What Really Happens When You Ask ChatGPT a Question?</h3>
+          <p>Goal → intent → context → tools → model → streaming response.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Episode 2</span>
+          <h3>How Cursor Understands Your Codebase</h3>
+          <p>Code retrieval, context engineering, embeddings, tool use, and patch generation.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Episode 3</span>
+          <h3>How MedicalDiary Thinks</h3>
+          <p>Voice, intake pathways, safety rules, RAG, longitudinal memory, and clinical guardrails.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Episode 4</span>
+          <h3>How AetherSignal Detects Safety Signals</h3>
+          <p>Intake, extraction, MedDRA coding, signal detection, evidence, auditability.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Episode 5</span>
+          <h3>Why Enterprise AI Is Different</h3>
+          <p>Governance, privacy, cost, model routing, evaluation, security, and rollout.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Checkpoint</span>
+          <h3>Mock Interview 1</h3>
+          <p>Explain the whole system to a CEO, a CTO, and a Principal TPM interviewer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="episode-1" class="section lesson">
+      <div class="lesson-header">
+        <span class="eyebrow">Episode 1</span>
+        <h2>What Really Happens When You Ask ChatGPT a Question?</h2>
+        <p>Estimated time: 20–30 minutes · Difficulty: Beginner · Interview importance: Very High</p>
+      </div>
+
+      <div class="lesson-block story">
+        <h3>Real-Life Story: Driving From Home to Office</h3>
+        <p>
+          You leave home with one goal: reach the office. You do not manually calculate every turn. You rely on GPS,
+          traffic updates, memory, road signs, and real-time decisions. Maybe you stop for coffee. Maybe you take a call.
+          Maybe the GPS reroutes you because of traffic.
+        </p>
+        <p>
+          That is how modern AI systems work. The user gives a destination. The AI platform figures out the route.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div><span>1</span><h4>User Goal</h4><p>“Summarize this PDF” or “My child has fever.”</p></div>
+        <div><span>2</span><h4>Intent Detection</h4><p>The system decides what the user is trying to do.</p></div>
+        <div><span>3</span><h4>Context Assembly</h4><p>Relevant history, files, rules, and system instructions are gathered.</p></div>
+        <div><span>4</span><h4>Tool / Retrieval Decision</h4><p>The system decides whether it needs search, database calls, APIs, or uploaded files.</p></div>
+        <div><span>5</span><h4>Model Reasoning</h4><p>The LLM generates or reasons over the assembled context.</p></div>
+        <div><span>6</span><h4>Validation</h4><p>Outputs may be checked against schemas, rules, safety constraints, or business logic.</p></div>
+        <div><span>7</span><h4>Response</h4><p>The answer streams back to the UI.</p></div>
+      </div>
+
+      <div class="lesson-grid">
+        <div class="lesson-block">
+          <h3>Technical Translation</h3>
+          <p>
+            A ChatGPT-style system is not “just a model.” It is an application layer around a model: authentication,
+            conversation state, prompt construction, tool routing, retrieval, inference, safety checks, streaming, and UI rendering.
+          </p>
+        </div>
+        <div class="lesson-block">
+          <h3>Interview Answer</h3>
+          <p>
+            “When a user sends a message, the platform first interprets intent, assembles relevant context, applies system and safety instructions,
+            optionally retrieves external knowledge or calls tools, sends the constructed prompt to a model, validates the output, and streams the response back.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="concept-map" class="section">
+      <h2>Concept Map</h2>
+      <p class="section-intro">Every episode introduces concepts only when they are needed.</p>
+      <div class="concepts">
+        <button data-concept="tokens">Tokens</button>
+        <button data-concept="embeddings">Embeddings</button>
+        <button data-concept="rag">RAG</button>
+        <button data-concept="agents">Agents</button>
+        <button data-concept="evals">Evaluation</button>
+      </div>
+      <div id="concept-detail" class="detail-card">
+        <h3>Click a concept</h3>
+        <p>Select a concept above to see the everyday analogy, technical meaning, and project connection.</p>
+      </div>
+    </section>
+
+    <section id="project-lens" class="section">
+      <h2>Your Project Lens</h2>
+      <div class="cards grid-3">
+        <article class="card">
+          <h3>MedicalDiary</h3>
+          <p>Voice-first pediatric/family health memory with deterministic pathways, red flags, longitudinal RAG, and trust-first UX.</p>
+        </article>
+        <article class="card">
+          <h3>AetherSignal</h3>
+          <p>Enterprise pharmacovigilance platform: intake, controlled terminology, signal detection, analytics, auditability, and governance.</p>
+        </article>
+        <article class="card">
+          <h3>Corporate Safety Intake</h3>
+          <p>AI-assisted source ingestion, extraction, follow-up orchestration, readiness gates, routing, and evidence preservation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="interview-mode" class="section interview">
+      <h2>Interview Mode</h2>
+      <p class="section-intro">Practice answers at different altitudes: CEO, CTO, Principal TPM, and engineer.</p>
+      <div class="qa-box">
+        <h3 id="question">Explain what happens when you ask ChatGPT a question.</h3>
+        <button class="button primary" onclick="nextQuestion()">Next Question</button>
+      </div>
+      <div class="answer-guide">
+        <h3>Strong Answer Pattern</h3>
+        <ol>
+          <li>Start with the user goal.</li>
+          <li>Explain the system layer around the model.</li>
+          <li>Mention context, tools, retrieval, validation, and streaming.</li>
+          <li>Close with governance and reliability for enterprise systems.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="cheatsheet" class="section cheatsheet">
+      <h2>Episode 1 Cheat Sheet</h2>
+      <div class="cheat-grid">
+        <div><strong>User goal</strong><span>What the user wants, not how to solve it.</span></div>
+        <div><strong>Intent</strong><span>The system’s interpretation of the goal.</span></div>
+        <div><strong>Context</strong><span>Relevant information assembled before the model answers.</span></div>
+        <div><strong>Tool use</strong><span>External actions like search, database calls, APIs, files.</span></div>
+        <div><strong>Inference</strong><span>The model generating output from context.</span></div>
+        <div><strong>Validation</strong><span>Checking output against rules, schemas, safety, and policy.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
