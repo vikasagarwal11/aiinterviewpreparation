@@ -1,38 +1,52 @@
-# Athena — Final Deployable Build
+# Athena v2.0 Final MVP
 
-Athena is a privacy-safe AI interview-preparation site for senior TPM / AI product leadership preparation.
+A privacy-safe, static AI interview preparation app for senior TPM / AI product leadership preparation.
 
-## Files in this package
+## Included
+
+- 34 complete lessons
+- Search across lessons, interview bank, system designs, and glossary
+- Lesson diagrams
+- Progress tracking in localStorage
+- Private local notes
+- 6 system design playbooks
+- 27 interview questions
+- 44 glossary terms
+- Private story vault
+- 30-day study plan
+
+## Deploy
+
+Replace repo root with:
 
 - `index.html`
-- `robots.txt`
 - `README.md`
 - `CHANGELOG.md`
+- `robots.txt`
 - `assets/styles.css`
-- `assets/script.js`
+- `assets/app.js`
 
-## Deploy to GitHub + Render
+Delete old root-level `styles.css` and `script.js`.
 
-1. Unzip this package.
-2. In your GitHub repo root, replace:
-   - `index.html`
-   - `README.md`
-   - `CHANGELOG.md`
-   - `robots.txt`
-3. Replace or create the `assets/` folder with:
-   - `assets/styles.css`
-   - `assets/script.js`
-4. Delete old root-level files if present:
-   - `styles.css`
-   - `script.js`
-5. Commit and push to `main`.
-6. Render should redeploy automatically.
-7. After deploy, open the Render URL and test:
-   - Click a concept button.
-   - Open F12 console.
-   - Confirm there are no red JavaScript errors.
+Commit and push:
 
-## Privacy warning
+```bash
+git add .
+git commit -m "Athena v2.0 final MVP"
+git push origin main
+```
 
-This build includes `noindex` and `robots.txt`, but that is not true access control.
-If the content is genuinely private, use Render auth/password protection, a private repo, or take the service offline.
+Render should redeploy automatically.
+
+## Test
+
+- Search for `RAG`
+- Open a lesson
+- Mark it complete
+- Save a note
+- Open Interview Bank
+- Check browser console for errors
+
+## Privacy
+
+This is still public unless you enable Render auth/password or keep the repo/deployment private. Do not enter proprietary stories into a public deployment.

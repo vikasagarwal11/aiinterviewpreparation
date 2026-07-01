@@ -5,118 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
   <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
-  <meta name="description" content="Athena is a private AI interview preparation system focused on AI architecture, product judgment, and Principal-level interview readiness." />
-  <title>Athena — AI Interview Preparation</title>
+  <meta name="description" content="Athena v2.0 is a privacy-safe AI leadership and interview preparation app for senior TPMs and AI product leaders." />
+  <title>Athena v2.0 — AI Interview Preparation</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <aside class="sidebar">
-    <div class="brand">
-      <div class="logo">A</div>
-      <div><h1>Athena</h1><p>AI Interview Prep</p></div>
-    </div>
+    <div class="brand"><div class="logo">A</div><div><h1>Athena v2.0</h1><p>AI Interview OS</p></div></div>
     <nav>
-      <div class="nav-label">Start</div>
       <a href="#dashboard">Dashboard</a>
-      <a href="#privacy">Privacy Rule</a>
-      <a href="#method">Athena Method</a>
-      <div class="nav-label">Learn</div>
-      <a href="#learning-path">Learning Path</a>
-      <a href="#episode-1">Episode 1</a>
-      <a href="#concept-map">Concept Map</a>
-      <div class="nav-label">Think</div>
-      <a href="#frameworks">Decision Frameworks</a>
-      <a href="#principal-thinking">Principal Thinking</a>
-      <a href="#program">Program / TPM</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#search">Search</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#lesson-view">Lesson Viewer</a>
       <a href="#system-design">System Design</a>
-      <div class="nav-label">Practice</div>
-      <a href="#story-scaffold">Private Story Vault</a>
-      <a href="#interview-mode">Interview Mode</a>
-      <a href="#next">Next Step</a>
+      <a href="#interview-bank">Interview Bank</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#story-vault">Private Story Vault</a>
+      <a href="#study-plan">Study Plan</a>
+      <a href="#deploy">Deploy</a>
     </nav>
-    <div class="private-badge"><b>Privacy-safe build.</b> Keep real project architecture, patent-sensitive ideas, data schemas, exact agent breakdowns, and implementation details offline or behind access control.</div>
+    <div class="private-badge"><b>Privacy-safe public build.</b> Keep real architecture, agent breakdowns, schemas, safety rules, and proprietary details out of public files.</div>
   </aside>
 
   <main>
-    <section id="dashboard" class="hero">
-      <div class="eyebrow">AI Leadership + Interview Curriculum</div>
-      <h2>Learn AI through real systems, real stories, and interview pressure — without exposing private IP.</h2>
-      <p>Athena teaches AI through vivid analogies, architecture judgment, decision frameworks, and interview practice. This build keeps public content generic while giving you a private local vault for your actual flagship stories.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#concept-map">Drill Concepts</a>
-        <a class="button secondary" href="#story-scaffold">Build Private Stories</a>
-      </div>
+    <section id="dashboard" class="hero searchable" data-title="Dashboard Athena AI Interview OS" data-tags="dashboard ai interview tpm leadership">
+      <div class="eyebrow">Final MVP Build</div>
+      <h2>Athena v2.0: your AI interview operating system.</h2>
+      <p>Complete static app with curriculum, diagrams, search, interview bank, system-design playbooks, glossary, progress tracking, and a private local story vault.</p>
+      <div class="hero-actions"><a class="button primary" href="#curriculum">Start Learning</a><a class="button secondary" href="#interview-bank">Practice Interview</a></div>
       <div class="stats">
-        <div><strong>8</strong><span>Core concepts</span></div>
-        <div><strong>2</strong><span>Decision frameworks</span></div>
-        <div><strong>4</strong><span>Interview buckets</span></div>
-        <div><strong>0</strong><span>Public project secrets</span></div>
+        <div><strong id="lesson-count">0</strong><span>Lessons</span></div>
+        <div><strong id="question-count">0</strong><span>Interview Qs</span></div>
+        <div><strong id="glossary-count">0</strong><span>Glossary terms</span></div>
+        <div><strong>Local</strong><span>Progress + notes</span></div>
       </div>
     </section>
 
-    <section id="privacy" class="section warning">
-      <h2>Public-Safety Rule</h2>
-      <p>The public version of Athena should teach the concepts. It should not disclose proprietary architecture, named internal workflows, unpublished product details, exact implementation choices, data schemas, or patent-sensitive ideas.</p>
+    <section id="privacy" class="section warning searchable" data-title="Privacy Public Safety Rule" data-tags="privacy noindex public safety intellectual property">
+      <h2>Privacy Rule</h2>
+      <p>This public version teaches concepts and interview frameworks. It should not contain your actual product internals, exact system architecture, agent decomposition, schemas, prompts, patent-sensitive ideas, customer data, or private employer details.</p>
       <div class="cards grid-3">
-        <article class="card good"><h3>Safe to publish</h3><p>Generic AI concepts, interview frameworks, analogies, public examples, and non-proprietary teaching content.</p></article>
-        <article class="card caution"><h3>Keep private</h3><p>Actual system internals, agent decomposition, clinical/safety rules, data schemas, architecture diagrams, and roadmap specifics.</p></article>
-        <article class="card caution"><h3>Best protection</h3><p>Use Render auth, password protection, private repo, or take the service offline. noindex is only a speed bump, not a lock.</p></article>
+        <article class="card good"><h3>Safe</h3><p>Generic examples, public concepts, broad diagrams, interview questions, and non-proprietary analogies.</p></article>
+        <article class="card caution"><h3>Private</h3><p>Exact architecture, named internal workflows, unique rules, private data, IP-sensitive features, and real story details.</p></article>
+        <article class="card caution"><h3>Reality</h3><p>noindex is not security. Use Render auth/password, private repo, or offline files for truly private content.</p></article>
       </div>
     </section>
 
-    <section id="method" class="section">
-      <h2>The Athena Method</h2>
-      <p class="section-intro">Athena is not a theory-first AI course. It teaches the way a senior builder learns: story first, problem first, judgment first.</p>
-      <div class="method-grid">
-        <article class="method-card"><span>01</span><h3>Story before theory</h3><p>Start with driving, restaurants, office security, family trips, or building a house. Then map the story to the AI concept.</p></article>
-        <article class="method-card"><span>02</span><h3>Problem before technology</h3><p>Ask the real problem first: how do we answer from changing private knowledge without hallucinating?</p></article>
-        <article class="method-card"><span>03</span><h3>Decision frameworks</h3><p>Learn when to use RAG, fine-tuning, agents, deterministic workflows, guardrails, and human review — and when not to.</p></article>
-        <article class="method-card"><span>04</span><h3>Interview altitude</h3><p>Every concept has a CEO version, engineer version, Principal TPM version, and skeptical follow-up version.</p></article>
-      </div>
-      <div class="flow-card"><h3>Default Lesson Flow</h3><div class="flow"><span>Real-life analogy</span><b>→</b><span>Simple explanation</span><b>→</b><span>Technical explanation</span><b>→</b><span>Enterprise trade-off</span><b>→</b><span>Interview answer</span><b>→</b><span>Trap to avoid</span></div></div>
+    <section id="search" class="section">
+      <h2>Search Athena</h2>
+      <p class="section-intro">Search lessons, concepts, system designs, interview questions, and glossary terms.</p>
+      <input id="search-input" class="search-input" type="search" placeholder="Search: RAG, embeddings, agents, AI gateway, model upgrade, healthcare..." />
+      <div id="search-results" class="search-results"></div>
     </section>
 
-    <section id="learning-path" class="section">
-      <h2>Learning Path</h2>
-      <p class="section-intro">Product-first, then architecture, then concepts. You still learn the fundamentals — but only when they solve a real problem.</p>
+    <section id="curriculum" class="section">
+      <h2>Curriculum</h2>
+      <p class="section-intro">Filter by module. Click any lesson to open the full explanation, diagram, interview answer, trap, and exercise.</p>
+      <div id="module-filters" class="filterbar"></div>
+      <div id="lesson-grid" class="cards grid-3"></div>
+    </section>
+
+    <section id="lesson-view" class="section">
+      <h2>Lesson Viewer</h2>
+      <div id="active-lesson" class="lesson-empty">Select a lesson from the curriculum.</div>
+    </section>
+
+    <section id="system-design" class="section">
+      <h2>System Design Playbooks</h2>
+      <p class="section-intro">Use these as 30–45 minute whiteboard structures.</p>
+      <div id="system-design-wrap" class="cards grid-2"></div>
+    </section>
+
+    <section id="interview-bank" class="section">
+      <h2>Interview Bank</h2>
+      <p class="section-intro">Grouped questions across concepts, decisions, programs, system design, and behavioral stories.</p>
+      <div id="interview-filters" class="filterbar"></div>
+      <div id="interview-wrap"></div>
+    </section>
+
+    <section id="glossary" class="section">
+      <h2>Glossary</h2>
+      <p class="section-intro">Fast definitions for interview revision.</p>
+      <div id="glossary-wrap" class="glossary"></div>
+    </section>
+
+    <section id="story-vault" class="section">
+      <h2>Private Story Vault</h2>
+      <p class="section-intro">Use this only if the site is private or you understand entries save to your browser localStorage. For true privacy, keep real stories in a private local file.</p>
+      <div id="story-vault-wrap"></div>
+    </section>
+
+    <section id="study-plan" class="section">
+      <h2>30-Day Study Plan</h2>
       <div class="cards grid-3">
-        <article class="card active"><span class="pill">Episode 1</span><h3>What Really Happens When You Ask ChatGPT a Question?</h3><p>Goal → intent → context → tools → model → validation → streaming.</p></article>
-        <article class="card"><span class="pill soon">Episode 2</span><h3>How Cursor Understands a Codebase</h3><p>Code retrieval, context engineering, embeddings, tool use, patch generation.</p></article>
-        <article class="card"><span class="pill soon">Episode 3</span><h3>How a Healthcare AI Assistant Thinks</h3><p>Voice, intake pathways, safety rules, RAG, longitudinal memory, clinical guardrails.</p></article>
-        <article class="card"><span class="pill soon">Episode 4</span><h3>How a Regulated AI Platform Handles Evidence</h3><p>Intake, extraction, controlled terminology, evidence, auditability, governance.</p></article>
-        <article class="card"><span class="pill soon">Episode 5</span><h3>Why Enterprise AI Is Different</h3><p>Governance, privacy, cost, model routing, evaluation, security, rollout.</p></article>
-        <article class="card"><span class="pill soon">Checkpoint</span><h3>Mock Interview 1</h3><p>Explain the whole system to a CEO, a CTO, and a Principal TPM interviewer.</p></article>
+        <article class="card"><h3>Week 1</h3><p>AI fundamentals, tokens, context, embeddings, RAG, prompting, ChatGPT lifecycle.</p></article>
+        <article class="card"><h3>Week 2</h3><p>Modern AI systems: Cursor, coding assistants, voice AI, search, agents, tools, MCP.</p></article>
+        <article class="card"><h3>Week 3</h3><p>Enterprise AI: gateway, evaluation, observability, cost, security, model upgrades.</p></article>
+        <article class="card"><h3>Week 4</h3><p>System design, TPM programs, story building, mock interviews, executive answers.</p></article>
+        <article class="card"><h3>Daily routine</h3><p>One lesson, one diagram, one interview answer, one story refinement.</p></article>
+        <article class="card"><h3>Weekly checkpoint</h3><p>Do one 45-minute mock: concept, architecture, program, and behavioral.</p></article>
       </div>
     </section>
 
-    <section id="episode-1" class="section lesson">
-      <div class="lesson-header"><span class="eyebrow">Episode 1</span><h2>What Really Happens When You Ask ChatGPT a Question?</h2><p>Estimated time: 20–30 min · Difficulty: Beginner · Interview importance: Very High</p></div>
-      <div class="lesson-block why"><h3>Why this matters</h3><p>Weak candidates say “ChatGPT is an LLM.” Strong candidates explain the full AI application system: intent, context assembly, retrieval, tool routing, inference, validation, observability, cost control, and response streaming.</p></div>
-      <div class="lesson-block story"><h3>Real-Life Story: Driving From Home to Office</h3><p>You leave home with one goal: reach the office. You do not manually calculate every turn — you rely on GPS, traffic updates, memory, road signs, and real-time decisions. Maybe you stop for coffee. Maybe the GPS reroutes you.</p><p>That is how modern AI systems work. The user gives a destination. The platform figures out the route.</p></div>
-      <div class="timeline">
-        <div><span>1</span><h4>User Goal</h4><p>“Summarize this PDF” or “Help me understand this issue.”</p></div>
-        <div><span>2</span><h4>Intent Detection</h4><p>The system decides what the user is trying to do.</p></div>
-        <div><span>3</span><h4>Context Assembly</h4><p>Relevant history, files, rules, and system instructions are gathered.</p></div>
-        <div><span>4</span><h4>Tool / Retrieval Decision</h4><p>Does it need search, database calls, APIs, or uploaded files?</p></div>
-        <div><span>5</span><h4>Model Reasoning</h4><p>The LLM generates or reasons over the assembled context.</p></div>
-        <div><span>6</span><h4>Validation</h4><p>Outputs checked against schemas, rules, safety constraints, and business logic.</p></div>
-        <div><span>7</span><h4>Response</h4><p>The answer streams back to the UI.</p></div>
-      </div>
-      <div class="lesson-grid">
-        <div class="lesson-block"><h3>Technical Translation</h3><p>A ChatGPT-style system is not just a model. It is an application layer around a model: authentication, conversation state, prompt construction, tool routing, retrieval, inference, safety checks, streaming, and UI rendering.</p></div>
-        <div class="lesson-block"><h3>Interview Answer</h3><p>When a user sends a message, the platform interprets intent, assembles relevant context, applies system and safety instructions, optionally retrieves knowledge or calls tools, sends the constructed prompt to a model, validates the output, and streams the response back.</p></div>
-      </div>
+    <section id="deploy" class="section">
+      <h2>Deploy Instructions</h2>
+      <ol class="steps">
+        <li>Replace repo root files with this package.</li>
+        <li>Ensure <code>assets/styles.css</code> and <code>assets/app.js</code> exist.</li>
+        <li>Delete old root-level <code>styles.css</code> and <code>script.js</code>.</li>
+        <li>Commit and push to <code>main</code>.</li>
+        <li>Render redeploys automatically.</li>
+        <li>After deploy, search for “RAG”, open a lesson, and check browser console for errors.</li>
+      </ol>
     </section>
-
-    <section id="concept-map" class="section"><h2>Concept Map</h2><p class="section-intro">The eight concepts that come up in nearly every AI loop. Tap one for analogy, simple explanation, technical meaning, interview answer, and trap to avoid.</p><div class="concepts" id="concept-buttons"></div><div id="concept-detail" class="detail-card"><h3>Pick a concept</h3><p style="color:var(--muted)">Select one above to see the Athena-style explanation.</p></div></section>
-    <section id="frameworks" class="section"><h2>Decision Frameworks</h2><p class="section-intro">Judgment questions that separate Principal from Senior. The interviewer is testing whether you can choose, not whether you memorized a definition.</p><div id="frameworks-wrap" class="grid-2"></div></section>
-    <section id="principal-thinking" class="section"><h2>How Principal Thinking Changes the Question</h2><p class="section-intro">A junior answer explains the term. A Principal answer explains the decision, risk, trade-off, rollout, and measurement.</p><div class="cards grid-3"><article class="card"><h3>Junior lens</h3><p>“How do embeddings work?”</p></article><article class="card"><h3>Senior lens</h3><p>“Which embedding model, vector database, and retrieval strategy should we use?”</p></article><article class="card"><h3>Principal lens</h3><p>“Should we use embeddings here at all, how will we measure retrieval quality, and what failure mode could hurt the business?”</p></article></div></section>
-    <section id="program" class="section"><h2>Program / TPM Layer</h2><p class="section-intro">Role-specific questions: model upgrades, regression handling, cost governance, vendor strategy, and rollout.</p><div id="program-wrap"></div></section>
-    <section id="system-design" class="section"><h2>System Design Framework</h2><p class="section-intro">A repeatable structure for the 30–45 minute AI architecture interview.</p><ul class="steps" id="sysdesign-steps"></ul><div class="examples" id="sysdesign-examples"></div></section>
-    <section id="story-scaffold" class="section"><h2>Private Story Vault</h2><p class="section-intro">This is where your real interview value goes. Keep actual project names, architecture choices, agent breakdowns, patent-sensitive ideas, and implementation details outside the public repo unless the site is access-controlled.</p><div id="scaffold-wrap"></div></section>
-    <section id="interview-mode" class="section interview"><h2>Interview Mode</h2><p class="section-intro">Real questions across all four buckets. Answer out loud first, then reveal.</p><div id="interview-wrap"></div></section>
-    <section id="next" class="section"><h2>Correct Next Step</h2><p class="section-intro">Keep coverage broad, but make sensitive stories private and start filling the flagship interview scaffold.</p><div class="cards grid-3"><article class="card"><span class="pill">Now</span><h3>Deploy this package</h3><p>Replace the root files and assets folder, then confirm interactivity works in Render.</p></article><article class="card"><span class="pill">Next</span><h3>Fill flagship story</h3><p>Write the 30-second, 2-minute, whiteboard, and trade-off versions for your strongest enterprise AI story.</p></article><article class="card"><span class="pill">Then</span><h3>Expand lessons</h3><p>Build Episode 2 and Episode 3 only after the story core is defensible.</p></article></div></section>
   </main>
-  <script src="assets/script.js"></script>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>

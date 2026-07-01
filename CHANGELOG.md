@@ -1,11 +1,14 @@
 # Changelog
 
-## Final Deployable Build
+## v2.0 Final MVP
 
-- Added stronger privacy warning.
-- Preserved broad AI interview-prep scope.
-- Added vivid generic examples without proprietary project details.
-- Added interview traps / mistakes to avoid.
-- Added Principal Thinking section.
-- Kept Private Story Vault local-only.
-- Added clear deployment instructions.
+- Added 34 complete lessons.
+- Added search.
+- Added progress tracking.
+- Added local notes.
+- Added 6 system design playbooks.
+- Added 27 interview questions.
+- Added 44 glossary terms.
+- Added private story vault.
+- Added 30-day study plan.
+- Kept content privacy-safe and generic.
